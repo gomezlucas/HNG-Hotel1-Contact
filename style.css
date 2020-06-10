@@ -23,6 +23,11 @@ body {
   position: relative;
 }
 
+.hero-facilities{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("./images/fac2.jpg");
+}
+
 .hero-text {
   text-align: center;
   position: absolute;
@@ -32,6 +37,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
+
 /**/
 
 .container__contact {
@@ -130,7 +136,7 @@ body {
   border: none;
   border-radius: 10px;
   font-weight: 700;
-  margin: auto;
+  margin: 0 auto;
   cursor: pointer;
 }
 .button:hover {
@@ -161,4 +167,51 @@ body {
     margin-left: 0;
     margin-top: 1rem;
   }
+}
+
+/* facilities */
+
+.caja {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.facility__card{
+  border-radius: 10px;
+}
+
+.facility__type{
+  background: #f77f00;
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  border-top-left-radius: 10px;
+}
+
+.facility__body{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .facilities__button {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .facility__image{
+    border-bottom-left-radius: 10px;
+
+  }
+
+@media screen and (max-width: 1000px) {
+  .caja {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+
 }
